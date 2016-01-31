@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.x.memorycardgame.MainActivity" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:background="@color/bg_color"
+	    >
+	    
+	    <TextView
+	        android:layout_marginLeft="4dp" 
+	        android:layout_marginTop="4dp" 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/high"
+    		android:id="@+id/tv_high_text"
+    		android:textColor="@color/white"
+    		android:textSize="@dimen/default_textsize"
+    		android:layout_alignParentLeft="true"
+	        />
+	    
+	   <TextView 
+	       	android:layout_marginLeft="4dp" 
+	        android:layout_marginTop="4dp" 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/tv_high_level"
+    		android:textColor="@color/white"
+    		android:textSize="@dimen/default_textsize"
+    		android:layout_toRightOf="@+id/tv_high_text"
+	        />
+	   
+	   <ImageButton 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/ib_help"
+    		android:background="@drawable/ic_help_white_36dp"
+    		android:layout_toLeftOf="@+id/ib_restart"
+	       />
+	   
+	   <ImageButton 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/ib_restart"
+    		android:background="@drawable/ic_autorenew_white_36dp"
+    		android:layout_alignParentRight="true"
+	       />
+	</RelativeLayout>
+    
+    
+    <com.x.memorycardgame.GameView 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_margin="4dp"
+    	android:id="@+id/gameview"
+        />
+    
+    
+</LinearLayout>
